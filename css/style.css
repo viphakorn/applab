@@ -48,6 +48,15 @@ body {
   overflow-x: hidden;
 }
 
+img {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+}
+
 .wrapper {
   max-width: 1170px;
   margin: 0 auto;
@@ -921,7 +930,7 @@ header .content .text .link {
   padding-top: 2rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  min-height: 100px;
+  min-height: 120px;
 }
 
 .download {
@@ -1216,16 +1225,17 @@ footer .content > img {
     cursor: pointer;
   }
   .feature .content h1,
+  .feature .content h2,
   .feature .content p {
     text-align: center;
   }
   .jackpot .content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    text-align: center;
   }
   .jackpot .content h1 {
     margin-bottom: 2rem;
-    text-align: center;
   }
   .jackpot .feature-list .list {
     display: -webkit-box;
@@ -1241,12 +1251,13 @@ footer .content > img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
   }
   .design .content {
     text-align: center;
   }
   .download .content img {
-    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
 

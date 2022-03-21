@@ -50,6 +50,11 @@ html,
 body {
   overflow-x: hidden;
 }
+img{
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
 .wrapper {
   max-width: 1170px;
   margin: 0 auto;
@@ -666,7 +671,7 @@ header {
       p {
         padding-top: 2rem;
         transition: 0.5s;
-        min-height: 100px;
+        min-height: 120px;
       }
     }
   }
@@ -905,28 +910,32 @@ footer {
     }
   }
   .feature .content h1,
+  .feature .content h2,
   .feature .content p {
     text-align: center;
   }
   .jackpot .content {
     flex-wrap: wrap;
+    text-align: center;
+
 
     h1 {
       margin-bottom: 2rem;
-      text-align: center;
     }
+
   }
   .jackpot .feature-list .list {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
   }
   .design .content {
     text-align: center;
   }
   .download .content img {
-    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -943,9 +952,9 @@ footer {
 
   footer .content {
     text-align: center;
-    nav{
+    nav {
       flex-wrap: wrap;
-    justify-content: center;
+      justify-content: center;
     }
   }
 }
