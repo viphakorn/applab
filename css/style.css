@@ -930,7 +930,7 @@ header .content .text .link {
   padding-top: 2rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  min-height: 120px;
+  height: auto;
 }
 
 .download {
